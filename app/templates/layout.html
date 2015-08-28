@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>basic project</title>
+    <meta name="p:domain_verify" content="cb8f7c5a9c5f70adff5b1e06c8f644d2"/>    
+    <meta name="viewport" content="width=device-width, initial-scale=1">      
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>    
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/javascript.js') }}"></script>
+  </head>
+
+  <body>
+    {% block header %}
+    {% endblock %}
+
+    {% block content %}
+    {% endblock %}
+    
+    {% block footer %}
+    {% endblock %}
+  </body>
+  </head>
+</html>
